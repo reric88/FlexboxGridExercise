@@ -1,0 +1,239 @@
+section:not(#three) {
+    height: 400px;
+    margin: 10px 0;
+   }
+   #one {
+    background-color: rgb(150, 150, 150);
+   }
+   #two {
+    background-color: rgb(205, 205, 205);
+   }
+   #three {
+    background-color: rgb(150, 150, 150);
+    width: 400px;
+    margin-bottom: 200px;
+   }
+   div {
+    width: 90px;
+    height: 90px;
+    border: 3px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #two div {
+    width: 175px;
+   }
+   #red {
+    background-color: red;
+   }
+   #green {
+    background-color: green;
+   }
+   #blue {
+    background-color: blue;
+   }
+   #orange {
+    background-color: orange;
+   }
+   #purple {
+    background-color: purple;
+   }
+   #brown {
+    background-color: brown;
+   }
+   p {
+    margin: 0;
+    background-color: #0C2340;
+    border: 2px solid #AE9142;
+    font-size: 30px;
+    color: #C99700;
+    text-align: center;
+   }
+   p:nth-of-type(even) {
+    color: #00843D;
+   }
+   
+   /* START BELOW THIS LINE */
+
+   /* QUESTION 1 */
+   /* QUESTION 2 */
+   /* QUESTION 3 */
+   /* QUESTION 4 */
+    #one {
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* QUESTION 5 */
+    /* QUESTION 6 */
+    /* QUESTION 7 */
+    /* QUESTION 8 */
+    #two {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* QUESTION 9 */
+    /* QUESTION 10 */
+    /* QUESTION 11 */
+    #three {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 100px;
+    }
+
+    /*
+    -------------------------------------------------------------------
+     Not sure if I messed something up or if a question was left out of the assignment, but I will change #three to look like the picture. This altered the last bonus, but I also provided the CSS in that situation as well.*/
+
+    /* #three {
+        grid-template-columns: 2fr 2fr 2fr 2fr 1fr 2fr;
+    }
+
+    #p-one {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    } 
+    -------------------------------------------------------------------
+    */
+
+    /* Not best practice */
+    /* BONUS 1  */
+    #one {
+        flex-direction: column-reverse; justify-content: left; /* This counts as one line, right?! */
+    }
+
+    /* BONUS 2 */
+    /* BONUS 3 */
+    #orange {
+        order: 2;
+    }
+
+    #purple {
+        order: 3;
+        align-self: flex-end;
+    }
+
+    #brown {
+        order: 1;
+        align-self: flex-start;
+    }
+
+    /* BONUS 4 */
+    #p-one {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    #p-two {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    #p-three {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    #p-four {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    #p-five {
+        grid-column-start: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    #p-six {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+    }
+
+    #p-seven {
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+
+    #p-eight {
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+
+/*
+-------------------------------------------------------------------
+ Given that this (below) doesn't actually look like the end picture for the bonus, I suppose the first way was correct */
+
+    /* #p-one {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #p-two {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #p-three {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    #p-four {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    #p-five {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    #p-six {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    #p-seven {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    #p-eight {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    } 
+    -------------------------------------------------------------------
+    */
