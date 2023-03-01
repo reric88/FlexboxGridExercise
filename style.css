@@ -60,77 +60,82 @@ section:not(#three) {
    
    /* START BELOW THIS LINE */
 
-   /* QUESTION 1 */
-   /* QUESTION 2 */
-   /* QUESTION 3 */
-   /* QUESTION 4 */
-    #one {
-        display: flex;
-        justify-content: end;
-        flex-direction: column;
-        align-items: center;
+   #one {
+       /* QUESTION 1 */
+       display: flex;
+       /* QUESTION 2 */
+       justify-content: flex-end; /* This fixed bonus #1. It was initially justify-content: end; */
+       /* QUESTION 3 */
+       flex-direction: column;
+       /* QUESTION 4 */
+       align-items: center;
     }
 
-    /* QUESTION 5 */
-    /* QUESTION 6 */
-    /* QUESTION 7 */
-    /* QUESTION 8 */
     #two {
+        /* QUESTION 5 */
         display: flex;
+        /* QUESTION 6 */
         align-items: center;
+        /* QUESTION 7 */
         justify-content: space-between;
+        /* QUESTION 8 */
         flex-wrap: wrap;
     }
 
-    /* QUESTION 9 */
-    /* QUESTION 10 */
-    /* QUESTION 11 */
     #three {
+        /* QUESTION 9 */
         display: grid;
+        /* QUESTION 10 */
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* QUESTION 11 */
         grid-auto-rows: 100px;
     }
 
-    /*
-    -------------------------------------------------------------------
-     Not sure if I messed something up or if a question was left out of the assignment, but I will change #three to look like the picture. This altered the last bonus, but I also provided the CSS in that situation as well.*/
+    
+    /*-------------------------------------------------------------------*/
+    
+    /*Not sure if I messed something up or if a question was left out of the assignment, but I will change #three to look like the picture. This altered the last bonus, but I also provided the CSS in that situation as well.*/
 
-    /* #three {
+ /* #three {
         grid-template-columns: 2fr 2fr 2fr 2fr 1fr 2fr;
-    }
+    } */
 
-    #p-one {
+    /* #p-one {
         grid-column-start: 6;
         grid-column-end: 7;
         grid-row-start: 2;
         grid-row-end: 3;
-    } 
-    -------------------------------------------------------------------
-    */
+    }  */
+    
+
+    /*-------------------------------------------------------------------*/
 
     /* Not best practice */
     /* BONUS 1  */
     #one {
-        flex-direction: column-reverse; justify-content: left; /* This counts as one line, right?! */
+        flex-direction: column-reverse; /* justify-content: left;  */ /* This counts as one line, right?! */
     }
 
     /* BONUS 2 */
-    /* BONUS 3 */
     #orange {
         order: 2;
     }
-
+    
     #purple {
         order: 3;
+        /* BONUS 3 */
         align-self: flex-end;
     }
 
     #brown {
         order: 1;
+        /* BONUS 3 */
         align-self: flex-start;
     }
 
     /* BONUS 4 */
+    /* SHORTHAND FOR BELOW */
+    /* grid-column: 1/3; */
     #p-one {
         grid-column-start: 1;
         grid-column-end: 3;
